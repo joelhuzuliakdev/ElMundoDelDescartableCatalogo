@@ -3,7 +3,6 @@ export const categories = [
         id: 'cajas-carton',
         name: 'Cajas de Cartón',
         description: 'Cajas de cartón corrugado para todo tipo de alimentos',
-        icon: '📦',
         products: [
         { name: 'Caja Pizza', size: '31 x 31 x 4', unidad: '$200', x50: '$9.200', x100: '$15.700' },
         { name: 'Caja ½ Pizza', size: '15,5 x 31 x 4', unidad: '$120', x50: '$4.400', x100: '$7.500' },
@@ -24,7 +23,6 @@ export const categories = [
         id: 'cajas-microcorrugada',
         name: 'Cajas Microcorrugadas',
         description: 'Cajas premium con mayor resistencia',
-        icon: '📦',
         products: [
         { name: 'Caja Pizza', size: '31 x 31 x 4', unidad: '$300', x50: '$14.300', x100: '$24.300' },
         { name: 'Caja Pizza 50x50', size: '50 x 50', unidad: '$900', x50: '$43.100', x100: '$73.900' },
@@ -38,7 +36,6 @@ export const categories = [
         id: 'bandejas-carton',
         name: 'Bandejas de Cartón',
         description: 'Bandejas rectangulares y redondas',
-        icon: '🍱',
         products: [
         { name: 'Bandeja N°1', size: '13 x 15', unidad: '$25', x100: '$2.380' },
         { name: 'Bandeja N°2', size: '16 x 19', unidad: '$30', x100: '$2.850' },
@@ -60,7 +57,6 @@ export const categories = [
         id: 'bandejas-plastico',
         name: 'Bandejas Plásticas',
         description: 'PP (micro) y PET (frío), con y sin tapa',
-        icon: '🍱',
         products: [
         { name: 'Bandeja 101 PP', size: '8,5 x 8,5', unidad: '$50', x100: '$4.750' },
         { name: 'Bandeja 102 PP', size: '9,5 x 13', unidad: '$55', x100: '$5.240' },
@@ -82,7 +78,6 @@ export const categories = [
         id: 'bandejas-telgopor',
         name: 'Bandejas de Telgopor',
         description: 'Bandejas y obleas térmicas',
-        icon: '🍱',
         products: [
         { name: 'Bandeja 15', size: '14,5 x 27', unidad: '$100', x100: '$9.500' },
         { name: 'Bandeja 17', size: '14 x 15', unidad: '$50', x100: '$4.760' },
@@ -103,7 +98,6 @@ export const categories = [
         id: 'bandejas-aluminio',
         name: 'Bandejas y Platos de Aluminio',
         description: 'Aluminio para hornear y servir',
-        icon: '🥘',
         products: [
         { name: 'Bandeja F-50', size: '-', unidad: '$160', x50: '$7.620' },
         { name: 'Bandeja F-75', size: '-', unidad: '$180', x50: '$8.570' },
@@ -124,7 +118,6 @@ export const categories = [
         id: 'papel',
         name: 'Papel',
         description: 'Sulfito, panadería, film y aluminio',
-        icon: '📄',
         products: [
         { name: 'Papel Sulfito 20cm (bobina)', size: '1 kilo', precio: '$2.800' },
         { name: 'Papel Sulfito 40cm (bobina)', size: '1 kilo / 6kg', precio: '$2.800' },
@@ -145,7 +138,6 @@ export const categories = [
         id: 'complementos',
         name: 'Complementos',
         description: 'Hilos, folex, cubiertos, pinches y más',
-        icon: '🔧',
         products: [
         { name: 'Hilo Algodón 40gr', size: 'x10', precio: '$400 / $3.800' },
         { name: 'Hilo Algodón 100gr', size: 'x10', precio: '$900 / $8.570' },
@@ -177,7 +169,6 @@ export const categories = [
         id: 'sorbetes',
         name: 'Sorbetes',
         description: 'Variedad de sorbetes para bebidas',
-        icon: '🥤',
         products: [
         { name: 'Sorbete Ensobrado', size: 'x1000', precio: '$7.800' },
         { name: 'Sorbete Negro', size: 'x1000', precio: '$6.200' },
@@ -190,7 +181,6 @@ export const categories = [
         id: 'potes',
         name: 'Potes Plásticos',
         description: 'Con y sin tapa, bisagras, vainilla',
-        icon: '🥡',
         products: [
         { name: 'Pote 55cc (sin tapa)', size: 'x100', precio: '$60 / $5.700' },
         { name: 'Pote 80cc (sin tapa)', size: 'x100', precio: '$60 / $5.700' },
@@ -221,7 +211,6 @@ export const categories = [
         id: 'vasos',
         name: 'Vasos',
         description: 'Plásticos, térmicos y polipapel',
-        icon: '🥤',
         products: [
         { name: 'Vaso Plástico 120cc', size: 'x100', precio: '$25 / $2.380' },
         { name: 'Vaso Plástico 180cc', size: 'x100', precio: '$30 / $2.860' },
@@ -260,7 +249,6 @@ export const categories = [
         id: 'bolsas-rollo',
         name: 'Bolsas en Rollo',
         description: 'Económicas, rendidoras, maxim y para pan',
-        icon: '🛍️',
         products: [
         { name: 'Rollo Rendidor 15x20', unidad: '$1.500', bulto: '12 / $17.200' },
         { name: 'Rollo Rendidor 15x25', unidad: '$1.800', bulto: '12 / $20.600' },
@@ -292,7 +280,6 @@ export const categories = [
         id: 'bolsas-papel',
         name: 'Bolsas de Papel',
         description: 'Bolsas y sobres de papel kraft',
-        icon: '🛍️',
         products: [
         { name: 'Bolsa Papel N°1', size: '7,5 x 15', unidad: '$10', x100: '$950' },
         { name: 'Bolsa Papel N°2', size: '9,5 x 17', unidad: '$15', x100: '$1.430' },
@@ -314,7 +301,6 @@ export const categories = [
         id: 'bolsas-camiseta',
         name: 'Bolsas Camiseta',
         description: 'Bolsas tipo camiseta blancas y de color',
-        icon: '🛍️',
         products: [
         { name: 'Camiseta Blanca 20x30', unidad: '$1.000', medio: '40 / $19.000', bulto: '$37.000' },
         { name: 'Camiseta Blanca 30x40', unidad: '$1.000', medio: '20 / $9.500', bulto: '$18.500' },
@@ -330,7 +316,6 @@ export const categories = [
         id: 'higiene',
         name: 'Higiene',
         description: 'Papel higiénico, toallas y servilletas',
-        icon: '🧻',
         products: [
         { name: 'Rollo Cocina "Elegante" 3 x 150 paños', unidad: '$2.900', bulto: '8 / $21.100' },
         { name: 'Rollo Gastronómico "Kekeres" x 200 paños', unidad: '$2.000', bulto: '12 / $22.900' },
@@ -351,7 +336,6 @@ export const categories = [
         id: 'bolsas-basura',
         name: 'Bolsas de Basura',
         description: 'Para residuos, consorcio y compactadora',
-        icon: '🗑️',
         products: [
         { name: 'Bolsa Residuo 45x60', precio: '$900' },
         { name: 'Bolsa Consorcio 60x90', precio: '$900' },
