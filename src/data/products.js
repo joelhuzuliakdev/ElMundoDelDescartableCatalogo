@@ -302,14 +302,14 @@ export const categories = [
         name: 'Bolsas Camiseta',
         description: 'Bolsas tipo camiseta blancas y de color',
         products: [
-        { name: 'Camiseta Blanca 20x30', unidad: '$1.000', medio: '40 / $19.000', bulto: '$37.000', image:'' },
-        { name: 'Camiseta Blanca 30x40', unidad: '$1.000', medio: '20 / $9.500', bulto: '$18.500', image:'' },
-        { name: 'Camiseta Blanca 40x50', unidad: '$2.200', medio: '20 / $21.000', bulto: '$40.740', image:'' },
-        { name: 'Camiseta Blanca 45x60', unidad: '$3.300', medio: '20 / $31.430', bulto: '$61.100', image:'' },
-        { name: 'Camiseta Blanca 50x70', unidad: '$4.900', medio: '10 / $23.340', bulto: '$45.370', image:'' },
-        { name: 'Camiseta Blanca 60x90', unidad: '$8.900', medio: '5 / -', bulto: '$41.200', image:'' },
-        { name: 'Camiseta Color 30x40', unidad: '$1.000', medio: '20 / $9.500', bulto: '$18.500', image:'' },
-        { name: 'Camiseta Color 40x50', unidad: '$2.200', medio: '20 / $21.000', bulto: '$40.740', image:'' },
+        { name: 'Camiseta Blanca 20x30', unidad: '$1.000', medio: '20 / $19.000', bulto: '40 / $37.000', image:'' },
+        { name: 'Camiseta Blanca 30x40', unidad: '$1.000', medio: '10 / $9.500', bulto: '20 / $18.500', image:'' },
+        { name: 'Camiseta Blanca 40x50', unidad: '$2.200', medio: '10 / $21.000', bulto: '20 / $40.740', image:'' },
+        { name: 'Camiseta Blanca 45x60', unidad: '$3.300', medio: '10 / $31.430', bulto: '20 / $61.100', image:'' },
+        { name: 'Camiseta Blanca 50x70', unidad: '$4.900', medio: '5 / $23.340', bulto: '10 / $45.370', image:'' },
+        { name: 'Camiseta Blanca 60x90', unidad: '$8.900', medio: '-', bulto: '5 / $41.200', image:'' },
+        { name: 'Camiseta Color 30x40', unidad: '$1.000', medio: '10 / $9.500', bulto: '20 / $18.500', image:'' },
+        { name: 'Camiseta Color 40x50', unidad: '$2.200', medio: '10 / $21.000', bulto: '20 / $40.740', image:'' },
         ]
     },
     {
