@@ -3,6 +3,21 @@ const { product } = Astro.props;
 ---
 
 <div class="bg-white rounded-lg border border-slate-200 hover:border-slate-300 hover:shadow-md transition-all duration-200 overflow-hidden">
+    <!-- Imagen del producto -->
+    <div class="w-full h-40 bg-gray-100 flex items-center justify-center overflow-hidden">
+    {product?.image && product.image !== "" ? (
+        <img
+        src={product.image}
+        alt={product?.name || "Producto"}
+        class="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+        loading="lazy"
+        />
+    ) : (
+        <span class="text-gray-400 text-sm select-none">
+        {product?.name || "Producto"}
+        </span>
+    )}
+    </div>
     <div class="p-4">
         <h4 class="font-semibold text-slate-900 mb-2 text-base">{product.name}</h4>
         
