@@ -2,7 +2,7 @@
 import { categories } from '../data/products.js';
 ---
 
-<nav class="bg-white shadow-md sticky top-0 z-40 no-print">
+<nav class="bg-white shadow-md sticky top-0 z-40 no-print transition-all duration-300" id="category-nav">
     <div class="container mx-auto px-4">
         <div class="flex items-center justify-between py-4">
         <h2 class="text-lg font-semibold text-slate-800">Categorías</h2>
@@ -37,19 +37,45 @@ import { categories } from '../data/products.js';
     document.addEventListener('DOMContentLoaded', () => {
         const menuToggle = document.getElementById('menu-toggle');
         const categoryMenu = document.getElementById('category-menu');
+        const categoryNav = document.getElementById('category-nav');
+        let lastScroll = 0;
         
         menuToggle?.addEventListener('click', () => {
         categoryMenu?.classList.toggle('hidden');
         });
 
-        // Smooth scroll
+        // Adjust category nav position when header hides
+        window.addEventListener('scroll', () => {
+        const currentScroll = window.pageYOffset;
+        const header = document.getElementById('main-header');
+        
+        if (currentScroll > lastScroll && currentScroll > 100) {
+            // Scrolling down - header hidden
+            categoryNav?.style.setProperty('top', '0');
+        } else {
+            // Scrolling up - header visible
+            if (header) {
+            const headerHeight = header.offsetHeight;
+            categoryNav?.style.setProperty('top', `${headerHeight}px`);
+            }
+        }
+        
+        lastScroll = currentScroll;
+        });
+
+        // Smooth scroll with offset
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', (e) => {
             e.preventDefault();
             const target = document.querySelector(anchor.getAttribute('href'));
             if (target) {
-            const offset = 120;
+            const header = document.getElementById('main-header');
+            const categoryNav = document.getElementById('category-nav');
+            const headerHeight = header?.offsetHeight || 0;
+            const navHeight = categoryNav?.offsetHeight || 0;
+            const offset = headerHeight + navHeight + 20;
             const targetPosition = target.offsetTop - offset;
+            
             window.scrollTo({
                 top: targetPosition,
                 behavior: 'smooth'
