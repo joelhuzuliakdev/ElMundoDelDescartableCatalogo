@@ -1,0 +1,22 @@
+---
+import ProductCard from './ProductCard.astro';
+const { category } = Astro.props;
+---
+
+<section id={category.id} class="mb-12 page-break">
+    <div class="bg-gradient-to-r from-slate-800 to-slate-700 rounded-xl p-6 mb-6 shadow-lg">
+        <div class="flex items-center gap-3">
+        <div class="text-4xl">{category.icon}</div>
+        <div>
+            <h2 class="text-2xl font-bold text-white">{category.name}</h2>
+            <p class="text-slate-300 text-sm mt-1">{category.description}</p>
+        </div>
+        </div>
+    </div>
+    
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+        {category.products.map(product => (
+        <ProductCard product={product} />
+        ))}
+    </div>
+</section>

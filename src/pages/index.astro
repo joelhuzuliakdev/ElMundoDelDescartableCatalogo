@@ -1,6 +1,111 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import CategoryIndex from '../components/CategoryIndex.astro';
+import CategorySection from '../components/CategorySection.astro';
+import Footer from '../components/Footer.astro';
+import { categories } from '../data/products.js';
 ---
 
-<Layout>
+<Layout title="Catálogo - El Mundo del Descartable">
+	<Header />
+	<CategoryIndex />
+	
+	<main class="container mx-auto px-4 py-8">
+		<!-- Welcome Section -->
+		<div class="bg-white rounded-xl shadow-lg p-8 mb-12 border border-slate-200">
+		<h2 class="text-3xl font-bold text-slate-900 mb-4">Bienvenidos a Nuestro Catálogo</h2>
+		<p class="text-slate-600 leading-relaxed mb-4">
+			En <strong>El Mundo del Descartable</strong> encontrarás la más amplia variedad de productos descartables 
+			para tu negocio gastronómico. Desde cajas de cartón hasta artículos de higiene, tenemos todo lo que necesitás 
+			para hacer crecer tu emprendimiento.
+		</p>
+		<div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+			<div class="flex items-start gap-3">
+			<div class="bg-blue-100 p-3 rounded-lg">
+				<svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+				</svg>
+			</div>
+			<div>
+				<h3 class="font-semibold text-slate-900 mb-1">Calidad Garantizada</h3>
+				<p class="text-sm text-slate-600">Productos de primera calidad</p>
+			</div>
+			</div>
+			<div class="flex items-start gap-3">
+			<div class="bg-emerald-100 p-3 rounded-lg">
+				<svg class="w-6 h-6 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"/>
+				</svg>
+			</div>
+			<div>
+				<h3 class="font-semibold text-slate-900 mb-1">Mejores Precios</h3>
+				<p class="text-sm text-slate-600">Precios mayoristas competitivos</p>
+			</div>
+			</div>
+			<div class="flex items-start gap-3">
+			<div class="bg-amber-100 p-3 rounded-lg">
+				<svg class="w-6 h-6 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+				</svg>
+			</div>
+			<div>
+				<h3 class="font-semibold text-slate-900 mb-1">Entrega Rápida</h3>
+				<p class="text-sm text-slate-600">Stock permanente disponible</p>
+			</div>
+			</div>
+		</div>
+		</div>
+
+		<!-- Categories -->
+		{categories.map(category => (
+		<CategorySection category={category} />
+		))}
+
+		<!-- Print Button (visible only on screen) -->
+		<div class="fixed bottom-6 right-6 no-print">
+		<button 
+			onclick="window.print()" 
+			class="bg-slate-800 hover:bg-slate-700 text-white px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-200 flex items-center gap-2 font-medium"
+			aria-label="Imprimir catálogo"
+		>
+			<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+			<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/>
+			</svg>
+			<span>Imprimir</span>
+		</button>
+		</div>
+
+		<!-- Back to top button -->
+		<button 
+		id="back-to-top"
+		class="fixed bottom-6 left-6 bg-slate-800 hover:bg-slate-700 text-white p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-200 opacity-0 pointer-events-none no-print"
+		aria-label="Volver arriba"
+		>
+		<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+			<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/>
+		</svg>
+		</button>
+	</main>
+	
+<Footer />
+
+	<script>
+		// Back to top button functionality
+		const backToTopButton = document.getElementById('back-to-top');
+		
+		window.addEventListener('scroll', () => {
+		if (window.scrollY > 300) {
+			backToTopButton?.classList.remove('opacity-0', 'pointer-events-none');
+			backToTopButton?.classList.add('opacity-100');
+		} else {
+			backToTopButton?.classList.add('opacity-0', 'pointer-events-none');
+			backToTopButton?.classList.remove('opacity-100');
+		}
+		});
+
+		backToTopButton?.addEventListener('click', () => {
+		window.scrollTo({ top: 0, behavior: 'smooth' });
+		});
+	</script>
 </Layout>
