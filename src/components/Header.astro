@@ -11,11 +11,15 @@ import { companyInfo } from '../data/products.js';
 
         <!-- BLOQUE IZQUIERDO: LOGO + TITULO -->
         <div class="flex items-center gap-4">
+
+            <!-- CONTENEDOR DEL LOGO (CORREGIDO) -->
+            <div class="w-12 h-12 md:w-14 md:h-14 rounded-full overflow-hidden bg-white flex items-center justify-center">
             <img
-            src="/logo.svg"
-            alt="Logo empresa"
-            class="w-14 h-14 object-contain"
+                src="/mundoLogo.webp"
+                alt="Logo empresa"
+                class="w-full h-full object-contain"
             />
+            </div>
 
             <div>
             <h1 class="text-3xl font-bold tracking-tight">
@@ -55,23 +59,21 @@ import { companyInfo } from '../data/products.js';
 <script>
     let lastScroll = 0;
     const header = document.getElementById('main-header');
-    
+
     window.addEventListener('scroll', () => {
         const currentScroll = window.pageYOffset;
-        
+
         if (currentScroll <= 0) {
         header?.classList.remove('-translate-y-full');
         return;
         }
-        
+
         if (currentScroll > lastScroll && currentScroll > 100) {
-        // Scrolling down
         header?.classList.add('-translate-y-full');
         } else {
-        // Scrolling up
         header?.classList.remove('-translate-y-full');
         }
-        
+
         lastScroll = currentScroll;
     });
 </script>
