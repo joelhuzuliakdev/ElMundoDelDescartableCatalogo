@@ -26,7 +26,7 @@ export const categories = [
         products: [
         { name: 'Caja Pizza', size: '31 x 31 x 4', unidad: '$300', x50: '$14.300', x100: '$24.300', image:'' },
         { name: 'Caja Pizza 50x50', size: '50 x 50', unidad: '$900', x50: '$43.100', x100: '$73.900', image:'' },
-        { name: 'Caja Empanada', size: '23 x 23 x 5,9', unidad: '$260', x50: '$11.500', x100: '$19.600', image:'' },
+        { name: 'Caja Empanada', size: '23 x 23 x 5,9', unidad: '$260', x50: '$11.500', x100: '$19.600', image:'/cajasCartonCorrugado/cajaEmpanadaCorrugada.webp' },
         { name: 'Caja Lomo', size: '22 x 14 x 9', unidad: '$190', x50: '$8.500', x100: '$14.000', image:'' },
         { name: 'Caja Hamburguesa 17x17', size: '17 x 17 x 10', unidad: '$350', x50: '$16.130', x100: '$27.400', image:'' },
         { name: 'Caja Hamburguesa', size: '17 x 17', unidad: '$420', x50: '$16.200', x100: '$27.400', image:'' },
