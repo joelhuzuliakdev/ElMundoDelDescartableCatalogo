@@ -184,11 +184,11 @@ export const categories = [
         name: 'Sorbetes',
         description: 'Variedad de sorbetes para bebidas',
         products: [
-        { name: 'Sorbete Ensobrado', size: 'x1000', precio: '$7.800', image:'' },
-        { name: 'Sorbete Negro', size: 'x1000', precio: '$6.200', image:'' },
-        { name: 'Sorbete Polipapel', size: 'x25', precio: '$1.000', image:'' },
-        { name: 'Sorbete Color (Naranja, Verde, Amarillo, Rosa)', size: 'x1000', precio: '$6.600', image:'' },
-        { name: 'Sorbete Flexible', size: 'x100', precio: '$3.600', image:'' },
+        { name: 'Sorbete Ensobrado', size: 'x1000', precio: '$7.800', image:'/sorbetes/sorbetesEnsobrados.webp' },
+        { name: 'Sorbete Negro', size: 'x1000', precio: '$6.200', image:'/sorbetes/sorbetesNegros.webp' },
+        { name: 'Sorbete Polipapel', size: 'x25', precio: '$1.000', image:'/sorbetes/sorbetesPolipapel.webp' },
+        { name: 'Sorbete Color (Naranja, Verde, Amarillo, Rosa)', size: 'x1000', precio: '$6.600', image:'/sorbetes/sorbetesDeColores.webp' },
+        { name: 'Sorbete Flexible', size: 'x100', precio: '$3.600', image:'/sorbetes/sorbetesFlexibles.webp' },
         ]
     },
     {
