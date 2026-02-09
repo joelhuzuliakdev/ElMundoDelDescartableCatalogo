@@ -351,10 +351,10 @@ export const categories = [
         name: 'Bolsas de Basura',
         description: 'Para residuos, consorcio y compactadora',
         products: [
-        { name: 'Bolsa Residuo 45x60', precio: '$900', image:'' },
+        { name: 'Bolsa Residuo 45x60', precio: '$900', image:'/bolsaBasura/residuo45x60.webp' },
         { name: 'Bolsa Consorcio 60x90', precio: '$900', image:'' },
-        { name: 'Bolsa Consorcio 85x110', precio: '$1.700', image:'' },
-        { name: 'Bolsa Compactadora 90x120', precio: '$1.800', image:'' },
+        { name: 'Bolsa Consorcio 85x110', precio: '$1.700', image:'/bolsaBasura/consorcio85x110.webp' },
+        { name: 'Bolsa Compactadora 90x120', precio: '$1.800', image:'/bolsaBasura/consorcio90x120.webp' },
         ]
     }
 ];
