@@ -100,7 +100,7 @@ export const categories = [
         { name: 'Estuche Hamburguesa', size: '-', unidad: '$150', x50: '$7.150', image:'/bandejaTelgopor/bandejaTelgoporTapa.webp' },
         { name: 'Estuche Profunda', size: '-', unidad: '$220', x50: '$10.500', image:'/bandejaTelgopor/bandejaTelgoporTapa2.webp' },
         { name: 'Estuche Mediano', size: '-', unidad: '$360', x50: '$17.150', image:'/bandejaTelgopor/bandejaTelgoporTapa3.webp' },
-        { name: 'Estuche Marmita', size: '-', unidad: '$350', x50: '$16.670', image:'' },
+        { name: 'Estuche Marmita', size: '-', unidad: '$350', x50: '$16.670', image:'/bandejaTelgopor/mermita.webp' },
         ]
     },
     {
@@ -210,9 +210,9 @@ export const categories = [
         { name: 'Pote 250cc (con tapa)', size: 'x100', precio: '$100 / $9.500', image:'' },
         { name: 'Pote 500cc (con tapa)', size: 'x100', precio: '$140 / $13.340', image:'' },
         { name: 'Pote 1000cc (con tapa)', size: 'x100', precio: '$300 / $28.570', image:'' },
-        { name: 'Bisagra Redondo 230cc', size: 'x100', precio: '$150 / $14.290', image:'' },
-        { name: 'Bisagra Redondo 330cc', size: 'x100', precio: '$160 / $15.240', image:'' },
-        { name: 'Bisagra Redondo 450cc', size: 'x100', precio: '$170 / $16.190', image:'' },
+        { name: 'Bisagra Redondo 230cc', size: 'x100', precio: '$150 / $14.290', image:'/potes/potesBisagras.webp' },
+        { name: 'Bisagra Redondo 330cc', size: 'x100', precio: '$160 / $15.240', image:'/potes/potesBisagras.webp' },
+        { name: 'Bisagra Redondo 450cc', size: 'x100', precio: '$170 / $16.190', image:'/potes/potesBisagras.webp' },
         { name: 'Bisagra Cuadrado 230cc', size: 'x100', precio: '$270 / $25.700', image:'' },
         { name: 'Bisagra Cuadrado 390cc', size: 'x100', precio: '$280 / $26.670', image:'' },
         { name: 'Bisagra Cuadrado 500cc', size: 'x100', precio: '$370 / $35.240', image:'' },
