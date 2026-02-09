@@ -4,7 +4,7 @@ const { product } = Astro.props;
 
 <div class="bg-white rounded-lg border border-slate-200 hover:border-slate-300 hover:shadow-md transition-all duration-200 overflow-hidden">
     <!-- Imagen del producto -->
-    <div class="w-full aspect-square bg-gray-200 flex items-center justify-center overflow-hidden relative">
+    <div class="w-full aspect-square bg-gray-400 flex items-center justify-center overflow-hidden relative">
     {product?.image && product.image !== "" ? (
         <img
         src={product.image}
